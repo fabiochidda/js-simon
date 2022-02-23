@@ -26,8 +26,21 @@ const alertTimer = setInterval(alertBox, 3000);
 
 function alertBox() {
     alert("Bentornato")
+    alert("Se te li ricordi inserisci di seguito i 5 numeri")
+
+    const arrayUserInput = [];
+
+    for (i=0; i<5; i++) {
+
+    let userInput = prompt();
+    arrayUserInput.push(userInput)
+
+    }
+
+    console.log(arrayUserInput)
     clearInterval(alertTimer);
 };
+
 
 
 
