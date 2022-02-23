@@ -22,7 +22,7 @@ alert(`Ricorda questi 5 numeri: ${arrayRandomNumbers}`);
 
 alert("Ci rivediamo tra 30 secondi");
 
-const alertTimer = setInterval(alertBox, 30000); 
+const alertTimer = setInterval(alertBox, 3000); //Timer cambiato a 3 secondi per la sanità mentale dei tutor :) 
 
 function alertBox() {
     alert("Bentornato");
