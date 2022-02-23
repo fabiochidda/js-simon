@@ -1,5 +1,7 @@
-const arrayRandomNumbers = []
-console.log(arrayRandomNumbers)
+alert("Benvenuto!");
+
+const arrayRandomNumbers = [];
+console.log(arrayRandomNumbers);
 
 for (i=0; i<5; i++) {
 
@@ -12,6 +14,20 @@ for (i=0; i<5; i++) {
     const randomNumbers = generatedRandomNumbers(1,30);
     arrayRandomNumbers.push(randomNumbers)
 
-}
+};
 
-console.log(arrayRandomNumbers)
+console.log(arrayRandomNumbers);
+
+alert(`Ricorda questi 5 numeri: ${arrayRandomNumbers}`);
+
+alert("Ci rivediamo tra 30 secondi");
+
+const alertTimer = setInterval(alertBox, 3000); 
+
+function alertBox() {
+    alert("Bentornato")
+    clearInterval(alertTimer);
+};
+
+
+
