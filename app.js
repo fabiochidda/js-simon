@@ -22,22 +22,29 @@ alert(`Ricorda questi 5 numeri: ${arrayRandomNumbers}`);
 
 alert("Ci rivediamo tra 30 secondi");
 
-const alertTimer = setInterval(alertBox, 3000); 
+const alertTimer = setInterval(alertBox, 30000); 
 
 function alertBox() {
-    alert("Bentornato")
-    alert("Se te li ricordi inserisci di seguito i 5 numeri")
+    alert("Bentornato");
+    alert("Se te li ricordi inserisci di seguito i 5 numeri");
 
     const arrayUserInput = [];
 
     for (i=0; i<5; i++) {
 
-    let userInput = prompt();
+    let userInput = parseInt(prompt());
     arrayUserInput.push(userInput)
 
-    }
+    };
 
-    console.log(arrayUserInput)
+    console.log(arrayUserInput);
+
+    const filteredArray = arrayRandomNumbers.filter(Element => arrayUserInput.includes(Element));
+
+    console.log(filteredArray.length);
+
+    alert(`Hai indovinato ${filteredArray.length} numeri, ovvero: ${filteredArray}`);
+
     clearInterval(alertTimer);
 };
 
